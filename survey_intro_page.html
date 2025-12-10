@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário - Apresentação</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+            width: 100%;
+            padding: 50px 40px;
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+
+        .section p {
+            color: #4a5568;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        .info-grid {
+            display: grid;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .info-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .info-item strong {
+            color: #2d3748;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .info-item span {
+            color: #4a5568;
+        }
+
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 25px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .section h2 {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Questionário Académico – Apresentação</h1>
+        
+        <div class="section">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Esta página serve como apresentação do inquérito criado no LimeSurvey para um 
+                trabalho académico. O objetivo é fornecer uma introdução clara e simples ao 
+                questionário, explicando o seu propósito e a forma como os dados serão utilizados.
+                A participação é totalmente voluntária e anónima.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Objetivo</h2>
+            <p>
+                O questionário pretende recolher informação destinada à elaboração de um estudo 
+                no âmbito da disciplina, utilizando o LimeSurvey como ferramenta de recolha de 
+                dados. Os resultados serão analisados apenas para fins académicos e não terão 
+                qualquer uso externo.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Informações do Estudo</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Realizado por:</strong>
+                    <span>Grupo LimeSurvey</span>
+                </div>
+                <div class="info-item">
+                    <strong>Disciplina:</strong>
+                    <span>Engenharia de Software I</span>
+                </div>
+                <div class="info-item">
+                    <strong>Instituição:</strong>
+                    <span>IPLUSO</span>
+                </div>
+                <div class="info-item">
+                    <strong>Contacto:</strong>
+                    <span>...</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="https://www.limesurvey.org/pt" class="button">Entrar no Questionário →</a>
+
+        </div>
+    </div>
+</body>
+</html>
